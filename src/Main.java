@@ -1,17 +1,13 @@
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
+                String bigAmount = "500";
+                String greatAmount = "100000";
+                int in = 5;
 
+                int hugeAmount = Integer.parseInt(greatAmount) + Integer.parseInt(bigAmount);
 
-        int x = 2;
-        int y = 12;
-
-        // y = x * y;
-         y = x + y; //14
-
-        x = y - x; // 12 = 14 - 2
-        y = y - x; // 2 = 14 - 12
-
-        System.out.println(x);
-        System.out.println(y);
+                System.out.println("Aa".toLowerCase(Locale.ROOT));
+        }
     }
-}
