@@ -1,19 +1,25 @@
+// 3
 import java.io.*;
+import java.util.Date;
 
 public class Main {
+
     public static void main(String[] args) throws IOException {
-        char A = 65;
-        System.out.println(A); // A
 
-//        InputStreamReader reader = new InputStreamReader(System.in); // Считывание символов с клавиатуры
-//        while (true) {
-//            int x = reader.read();
-//            System.out.println(x);
-//        }
+        Date date = new Date();
 
-            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-            String s = reader.readLine();
-            System.out.println("Мы считали с клавиатуры эту строку:");
-            System.out.println(s);
+        FileInputStream fileInputStream = new FileInputStream("D:\\test10.txt");
+
+
+        int i;
+
+        while((i = fileInputStream.read())!= -1){
+
+            System.out.print((char)i);
+        }
+
+        Date date1 = new Date();
+
+        System.out.println((date1.getTime() - date.getTime()));
     }
 }
