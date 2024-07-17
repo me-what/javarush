@@ -1,6 +1,5 @@
-// 3
-import java.io.*;
-import java.util.Date;
+// https://javarush.com/groups/posts/1924-operacii-nad-chislami-v-java
+// Операции над числами в Java. Operations on numbers in Java
 
 public class Main {
     public static void main(String[] args) throws IOException {
