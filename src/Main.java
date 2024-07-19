@@ -1,19 +1,15 @@
-/* Призывная компания.
-Ввести с клавиатуры имя и возраст. Если возраст в пределах 18-28 (включительно),
-то вывести надпись "Имя, явитесь в военкомат", где Имя - это имя, введенное ранее с клавиатуры. */
-
+/* 3. Пример использования оператора if-else
+Вывод на экран минимального из двух чисел. Displaying the minimum of two numbers. */
 import java.util.Scanner;
 
-// Сокращенная форма оператора if. The abbreviated form of the if statement
 public class Main {
-    public static void main(String[] args){
-        int age = 18;
-        if (age == 18)
-        {
-            System.out.println("Вы уже взрослый");
-        }
-
-        if (age == 18)
-            System.out.println("Вы уже взрослый");
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);  // создаем объект Scanner
+        int a = console.nextInt();  // читаем с клавиатуры первое число
+        int b = console.nextInt();  // читаем с клавиатуры второе число
+        if (a < b)                   // если a меньше b
+            System.out.println(a);     // выводим на экран a
+        else                         // иначе
+            System.out.println(b);     // выводим на экран b
     }
 }
