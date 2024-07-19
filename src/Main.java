@@ -1,59 +1,19 @@
-// 3
-import java.io.*;
-import java.util.Date;
+/* Призывная компания.
+Ввести с клавиатуры имя и возраст. Если возраст в пределах 18-28 (включительно),
+то вывести надпись "Имя, явитесь в военкомат", где Имя - это имя, введенное ранее с клавиатуры. */
 
+import java.util.Scanner;
+
+// Сокращенная форма оператора if. The abbreviated form of the if statement
 public class Main {
-    public static void main(String[] args) throws IOException {
-        int x = 999;
-        int y = 33;
-        int a = 33%2;
-        int b = 10;
-        int c = 30;
-        int z = 256;
+    public static void main(String[] args){
+        int age = 18;
+        if (age == 18)
+        {
+            System.out.println("Вы уже взрослый");
+        }
 
-        System.out.println(a); // 1
-        System.out.println(x+y); // 1032
-        System.out.println(x-y); // 966
-        System.out.println(x*y); // 32967
-        System.out.println(x/y); // 30
-        System.out.println(x==y); // false
-        b = c = z;
-        System.out.println(b); // 256
-        System.out.println();
-
-        // Унарные операции. Unary operations.
-        // унарный минус. unary minus
-        int uno = 100;
-        uno = -uno;
-        System.out.println(uno); // - 100
-        uno = -uno;
-        System.out.println(uno); // 100
-        System.out.println();
-
-        // Постфиксные и префиксные операторы
-        // постинкремент x++
-        int d = 999;
-        d++;
-        System.out.println(d);
-
-        // постдекремент x--
-        d--;
-        System.out.println(d);
-
-        System.out.println();
-
-        // Логические операторы.
-        // Логическое И &&
-        System.out.println(100 > 10 && 100 > 200); // false
-        System.out.println(100 > 50 && 100 >= 100); // true
-        System.out.println();
-
-        // Логическое НЕ (NOT) !
-        boolean bx = true;
-        System.out.println(!bx); // false
-
-        // Логическое ИЛИ ||
-        System.out.println(100 > 10 || 100 > 200); // true
-
+        if (age == 18)
+            System.out.println("Вы уже взрослый");
     }
 }
