@@ -114,18 +114,18 @@ public class Main {
         int x = scanner.nextInt();
         int y = scanner.nextInt();
 
-        boolean one = x>0 && y>0;
-        boolean two = x<0 && y>0;
-        boolean three = x<0 && y<0;
-        boolean four = x>0 && y<0;
+        boolean firstQuarter = x>0 && y>0;
+        boolean secondQuarter = x<0 && y>0;
+        boolean thirdQuarter = x<0 && y<0;
+        boolean fourtQuarter = x>0 && y<0;
 
-        if (one) {
+        if (firstQuarter) {
             System.out.println(1);
-        } else if (two) {
+        } else if (secondQuarter) {
             System.out.println(2);
-        } else if (three) {
+        } else if (thirdQuarter) {
             System.out.println(3);
-        } else if (four) {
+        } else if (fourtQuarter) {
             System.out.println(4);
         }
     }
