@@ -65,3 +65,68 @@ public class Main {
 одного оператора if без else.
 
 Подсказка: используй логический оператор "||" (или). */
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int age = scanner.nextInt();
+        boolean isYoung = age < 20 || age > 60;
+        boolean isOld = (age >= 20 || age <= 60);
+
+        if (isYoung || !isOld) {
+            System.out.println("можно не работать");
+        }
+    }
+}
+
+/* Полезные выражения:
+
+Выражение	Результат
+m && !m     false
+m || !m     true
+!(a && b)   !a || !b
+!(a || b)   !a && !b */
+
+
+/* Task 3. Координатные четверти. Coordinate quarters.
+Ввести с клавиатуры два целых числа, которые будут координатами точки (первое считанное число - это координата "x",
+а второе - координата "y"). Известно, что точка не лежит на координатных осях OX и OY.
+Вывести на экран номер координатной четверти, в которой находится данная точка.
+
+Подсказка:
+Принадлежность точки с координатами (x, y) к одной из четвертей определяется следующим образом:
+
+для первой четверти x>0 и y>0;
+для второй четверти x<0 и y>0;
+для третьей четверти x<0 и y<0;
+для четвертой четверти x>0 и y<0.
+
+Пример для чисел 4 6:
+1
+Пример для чисел -6 -6:
+3 */
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+
+        boolean one = x>0 && y>0;
+        boolean two = x<0 && y>0;
+        boolean three = x<0 && y<0;
+        boolean four = x>0 && y<0;
+
+        if (one) {
+            System.out.println(1);
+        } else if (two) {
+            System.out.println(2);
+        } else if (three) {
+            System.out.println(3);
+        } else if (four) {
+            System.out.println(4);
+        }
+    }
+}
