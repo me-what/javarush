@@ -57,3 +57,18 @@ public class Main {
 // Task 3. Высокая точность
 /* Напиши программу, которая считывает с клавиатуры два вещественных числа (double) и выдает сообщение о том,
 равны ли эти числа с точностью до одной миллионной. */
+import java.util.Scanner;
+
+public class Main {
+        public static void main(String[] args) {
+                Scanner scanner = new Scanner(System.in);
+                double digit1 = scanner.nextDouble();
+                double digit2 = scanner.nextDouble();
+
+                if (Math.abs(digit2-digit1) < 0.000001) {
+                        System.out.println("числа равны");
+                } else {
+                        System.out.println("числа не равны");
+                }
+        }
+}
