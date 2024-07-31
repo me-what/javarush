@@ -1,10 +1,22 @@
+import java.util.Scanner;
+
 public class Main {
+    public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
-
-        String s1 = "JavaRush - лучший сайт для изучения Java!";
-        String s2 = new String("JavaRush - лучший сайт для изучения Java!");
-        System.out.println(s1.equals(s2));
-        System.out.println(s1==s2);
+        int sum = 0;
+        boolean isExit = false;
+        while (!isExit) {
+            if (scanner.hasNextInt()) {
+                int number = scanner.nextInt();
+                sum = sum + number;
+            } else if (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                if (line.equals("ENTER")) {
+                    isExit = true;
+                }
+            }
+        }
+        System.out.println(sum);
     }
 }
