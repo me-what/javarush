@@ -118,27 +118,6 @@ public class Main {
 /* Напишем программу, в которой нужно вводить с клавиатуры целые числа и считать их сумму,
 пока пользователь не введет слово "ENTER".
 Вывести на экран полученную сумму и завершить программу. */
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
-public class Main {
-    public static void main(String[] args) throws Exception {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int sum = 0;
-
-        while (true) {
-            String str = reader.readLine();
-            if ("ENTER".equals(str)) {
-                System.out.println(sum);
-                break;
-            } else {
-                sum += Integer.parseInt(str);
-            }
-        }
-    }
-}
-
-// Task 3. Второе решение
 import java.util.Scanner;
 
 public class Main {
@@ -159,6 +138,28 @@ public class Main {
             }
         }
         System.out.println(sum);
+    }
+}
+
+
+// Task 3. Второе решение
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int sum = 0;
+
+        while (true) {
+            String str = reader.readLine();
+            if ("ENTER".equals(str)) {
+                System.out.println(sum);
+                break;
+            } else {
+                sum += Integer.parseInt(str);
+            }
+        }
     }
 }
 
