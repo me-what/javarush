@@ -42,6 +42,7 @@ public class Main {
         while(console.hasNextInt())
         {
             int x = console.nextInt();
+            System.out.println(x);
         }
     }
 }
@@ -67,10 +68,6 @@ public class Main {
 
 
 // Task 1. Я никогда не буду работать за копейки
-/* Используя цикл while вывести на экран сто раз цитату (переменная quote):
-«Я никогда не буду работать за копейки. Амиго»
-
-Каждое значение вывести с новой строки. */
 public class Main {
     public static void main(String[] args) {
         String quote = "Я никогда не буду работать за копейки. Амиго";
@@ -81,22 +78,14 @@ public class Main {
         }
     }
 }
+/* Используя цикл while вывести на экран сто раз цитату (переменная quote):
+«Я никогда не буду работать за копейки. Амиго»
+
+Каждое значение вывести с новой строки. */
+
 
 
 // Task 2. Все любят Мамбу
-/* Ввести с клавиатуры имя и, используя цикл while, 10 раз вывести: <имя> любит меня (переменная text).
-Каждый вывод - с новой строки.
-Пример вывода на экран для имени Света:
-Света любит меня.
-Света любит меня.
-Света любит меня.
-Света любит меня.
-Света любит меня.
-Света любит меня.
-Света любит меня.
-Света любит меня.
-Света любит меня.
-Света любит меня. */
 import java.util.Scanner;
 
 public class Main {
@@ -112,12 +101,23 @@ public class Main {
         }
     }
 }
+/* Ввести с клавиатуры имя и, используя цикл while, 10 раз вывести: <имя> любит меня (переменная text).
+Каждый вывод - с новой строки.
+Пример вывода на экран для имени Света:
+Света любит меня.
+Света любит меня.
+Света любит меня.
+Света любит меня.
+Света любит меня.
+Света любит меня.
+Света любит меня.
+Света любит меня.
+Света любит меня.
+Света любит меня. */
+
 
 
 // Task 3. Суммирование. Summation
-/* Напишем программу, в которой нужно вводить с клавиатуры целые числа и считать их сумму,
-пока пользователь не введет слово "ENTER".
-Вывести на экран полученную сумму и завершить программу. */
 import java.util.Scanner;
 
 public class Main {
@@ -140,6 +140,10 @@ public class Main {
         System.out.println(sum);
     }
 }
+/* Напишем программу, в которой нужно вводить с клавиатуры целые числа и считать их сумму,
+пока пользователь не введет слово "ENTER".
+Вывести на экран полученную сумму и завершить программу. */
+
 
 
 // Task 3. Второе решение
@@ -214,8 +218,25 @@ public class Main {
 }
 
 
-/* Task 4.
-Используя вложенные циклы while (цикл в цикле) выведи на экран прямоугольник размером 5 (высота) на 10 (ширина),
+// JavaRush. 4 level 3 lecture.
+// Task 4.Заполненный прямоугольник. Filled rectangle
+public class Main {
+    public static void main(String[] args) {
+        int row = 0;
+
+        while (row<5) {
+            int column = 0;
+
+            while (column<10) {
+                System.out.print("Q");
+                column++;
+            }
+            System.out.println();
+            row++;
+        }
+    }
+}
+/* Используя вложенные циклы while (цикл в цикле) выведи на экран прямоугольник размером 5 (высота) на 10 (ширина),
 заполненный буквой 'Q'.
 
 Пример вывода:
@@ -224,26 +245,32 @@ QQQQQQQQQQ
 QQQQQQQQQQ
 QQQQQQQQQQ
 QQQQQQQQQQ */
+
+
+
+// Task 5. Незаполненный прямоугольник. Empty rectangle
+// решение 1
 public class Main {
     public static void main(String[] args) {
-        int a = 0;
-
-        while (a<5) {
-            int b = 0;
-
-            while (b<10) {
-                System.out.print("Q");
-                b++;
+        int height = 1;
+        while (height <= 10) {
+            int width = 1;
+            while (width <= 20) {
+                if (height == 1 || height == 10) {
+                    System.out.print('Б');
+                } else if (width == 1 || width == 20) {
+                    System.out.print('Б');
+                } else {
+                    System.out.print(' ');
+                }
+                width++;
             }
             System.out.println();
-            a++;
+            height++;
         }
     }
 }
-
-
-/* Task 5. Незаполненный прямоугольник
-Используя вложенные циклы while (цикл в цикле) выведи на экран незаполненный прямоугольник (его контур)
+/* Используя вложенные циклы while (цикл в цикле) выведи на экран незаполненный прямоугольник (его контур)
 размером 10 (высота) на 20 (ширина) из букв 'Б'.
 Незаполненная часть состоит из пробелов.
 
@@ -258,7 +285,9 @@ public class Main {
 Б                  Б
 Б                  Б
 ББББББББББББББББББББ */
-// решение 1
+
+
+// решение 2
 public class Main {
     public static void main(String[] args) {
         int a = 0;
@@ -278,28 +307,6 @@ public class Main {
             }
             System.out.println();
             a++;
-        }
-    }
-}
-
-// решение 2
-public class Main {
-    public static void main(String[] args) {
-        int height = 1;
-        while (height <= 10) {
-            int width = 1;
-            while (width <= 20) {
-                if (height == 1 || height == 10) {
-                    System.out.print('Б');
-                } else if (width == 1 || width == 20) {
-                    System.out.print('Б');
-                } else {
-                    System.out.print(' ');
-                }
-                width++;
-            }
-            System.out.println();
-            height++;
         }
     }
 }
