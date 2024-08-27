@@ -30,34 +30,28 @@ public class Main {
 }
 
 
+
 // Task 1. Сравним строки. Compare the strings.
-/* Напиши программу, которая считывает с клавиатуры две строки и выдает сообщение о том, одинаковые ли эти строки. */
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String s1 = scanner.nextLine();
-        String s2 = scanner.nextLine();
+        String line1 = scanner.nextLine();
+        String line2 = scanner.nextLine();
 
-        if (s1.equals(s2)) {
+        if (line1.equals(line2)) {
             System.out.println("строки одинаковые");
         } else {
             System.out.println("строки разные");
         }
     }
 }
+/* Напиши программу, которая считывает с клавиатуры две строки и выдает сообщение о том, одинаковые ли эти строки. */
+
 
 
 // Task 2. Сравнение строк по ссылке. Comparing strings by reference.
-/* В методе main напиши код попарного сравнения по ссылке строк string1, string2 и string3 с выводом соответствующего
-сообщения после каждого сравнения:
-"ссылки на строки одинаковые" или "ссылки на строки разные".
-
-Порядок сравнения должен быть следующим:
-- строку string1 со строкой string2
-- строку string2 со строкой string3
-- строку string1 со строкой string3. */
 public class Main {
     public static String string1 = "Амиго";
     public static String string2 = string1;
@@ -66,33 +60,38 @@ public class Main {
     public static void main(String[] args) {
         String same = "ссылки на строки одинаковые";
         String different = "ссылки на строки разные";
-        if (string1==string2) { // true
+
+        if (string1 == string2) { // true
             System.out.println(same);
         } else {
             System.out.println(different);
         }
 
-        if (string2==string3) { // false
+        if (string2 == string3) { // false
             System.out.println(same);
         } else {
             System.out.println(different);
         }
 
-        if (string1==string3) { // false
+        if (string1 == string3) { // false
             System.out.println(same);
         } else {
             System.out.println(different);
         }
     }
 }
+/* В методе main напиши код попарного сравнения по ссылке строк string1, string2 и string3 с выводом соответствующего
+сообщения после каждого сравнения:
+"ссылки на строки одинаковые" или "ссылки на строки разные".
+
+Порядок сравнения должен быть следующим:
+- строку string1 со строкой string2
+- строку string2 со строкой string3
+- строку string1 со строкой string3. */
+
 
 
 // Task 3. Сломанная клавиатура. A broken keyboard.
-/* Амиго создал секретное слово для доступа к закрытой информации, но у него сломалась клавиатура, и теперь невозможно
-набирать буквы в верхнем регистре. Напиши программу, которая будет сравнивать введенную строку со строкой из переменной
-secret, не учитывая регистр.
-Если введенная строка равна строке из переменной secret, программа выводит на экран сообщение "доступ разрешен".
-В ином случае - "доступ запрещен". */
 import java.util.Scanner;
 
 public class Main {
@@ -108,6 +107,12 @@ public class Main {
         }
     }
 }
+/* Амиго создал секретное слово для доступа к закрытой информации, но у него сломалась клавиатура, и теперь невозможно
+набирать буквы в верхнем регистре. Напиши программу, которая будет сравнивать введенную строку со строкой из переменной
+secret, не учитывая регистр.
+Если введенная строка равна строке из переменной secret, программа выводит на экран сообщение "доступ разрешен".
+В ином случае - "доступ запрещен". */
+
 
 
 // exapmple
