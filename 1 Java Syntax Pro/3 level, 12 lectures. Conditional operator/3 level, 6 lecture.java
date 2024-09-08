@@ -59,6 +59,7 @@ public class Main {
 }
 
 
+
 // Task 2. Работать или не работать - вот в чем вопрос. To work or not to work - that's the question
 import java.util.Scanner;
 
@@ -78,9 +79,7 @@ public class Main {
 Подсказка: используй логический оператор "||" (или). */
 
 
-
 /* Полезные выражения:
-
 Выражение	Результат
 m && !m     false
 m || !m     true
