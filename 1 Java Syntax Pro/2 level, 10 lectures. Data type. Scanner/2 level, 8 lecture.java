@@ -1,35 +1,66 @@
+// https://javarush.com/quests/lectures/questsyntaxpro.level02.lecture05
 // Ввод с клавиатуры. Keyboard input
 
-// task 1
-// Чтение и преобразование строк
+// Task 1
+// Чтение и преобразование строк. Reading and converting strings
 public class Solution {
     public static void main(String[] args) {
-        Scanner console = new Scanner(System.in);
-        String string_1 = console.nextLine();
-        String string_2 = console.nextLine();
-        String string_3 = console.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        String string_1 = scanner.nextLine();
+        String string_2 = scanner.nextLine();
+        String string_3 = scanner.nextLine();
 
         System.out.println(string_3);
         System.out.println(string_2.toUpperCase());
         System.out.println(string_1.toLowerCase());
     }
 }
+/* Считай с клавиатуры три строки.
+А затем:
+
+Выведи на экран третью строку в неизменном виде.
+Выведи на экран вторую строку, предварительно преобразовав ее к верхнему регистру.
+Выведи на экран первую строку, предварительно преобразовав ее к нижнему регистру.
+Пример ввода:
+
+Строка Номер РАЗ
+Вторая строка
+Строка 3
+Пример вывода:
+
+Строка 3
+ВТОРАЯ СТРОКА
+строка номер раз */
 
 
-// task 2
-// Считай с клавиатуры три целых числа. Выведи на экран их среднее арифметическое.
+
+// Task 2
+// Чтение чисел. Reading numbers
 public class Solution {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
-        int digit_1 = console.nextInt();
-        int digit_2 = console.nextInt();
-        int digit_3 = console.nextInt();
+        int number_1 = console.nextInt();
+        int number_2 = console.nextInt();
+        int number_3 = console.nextInt();
 
         // am (arithmetic mean) - сред.арифметическое
-        int am = (digit_1 + digit_2 + digit_3) / 3;
+        int am = (number_1 + number_2 + number_3) / 3;
         System.out.println(am);
     }
 }
+/* Считай с клавиатуры три целых числа.
+Выведи на экран их среднее арифметическое.
+
+Пример ввода:
+51
+101
+201
+
+Пример вывода:
+117
+Среднее арифметическое - это число, равное сумме всех чисел, деленной на их количество.
+Используй деление без остатка. */
+
 
 
 // Class Scanner
