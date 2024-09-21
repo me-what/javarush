@@ -1,4 +1,8 @@
-// task 1
+// https://javarush.com/quests/lectures/questsyntaxpro.level02.lecture03
+// Примеры работы со строками. Examples of working with strings
+
+// Task 1
+// Логотип решает все. The logo solves everything
 public class Solution {
     public static void main(String[] args) {
         String s1 = "Do";
@@ -10,8 +14,13 @@ public class Solution {
         System.out.println(tagline); // JustDoIt
     }
 }
+/* В переменную tagline нужно записать строку "JustDoIt".
+Используй s1, s2, s3 и конкатенацию строк. */
 
-// task 2
+
+
+// Task 2
+// Пустота и пробелы. Emptiness and gaps
 public class Solution {
     public static void main(String[] args) {
         String emptiness = "пустота";
@@ -21,8 +30,15 @@ public class Solution {
         System.out.println(fullness); // пустота пустота пустота
     }
 }
+/* Заполни пробелы пустотой... или наоборот.
 
-// task 3
+Используй переменную emptiness, строки с одним пробелом и конкатенацию строк,
+чтобы записать в переменную fullness строку "пустота пустота пустота". */
+
+
+
+// Task 3
+// Конкатенация строк и чисел. Concatenation of strings and numbers
 public class Solution {
     public static void main(String[] args) {
         int x = 2;
@@ -34,6 +50,9 @@ public class Solution {
         System.out.println(digits); // 60
     }
 }
+/* В переменную digits нужно записать строку "60".
+Используй переменные x, y, z, пустую строку и конкатенацию строк. */
+
 
 
 // task 4
