@@ -55,7 +55,8 @@ public class Solution {
 
 
 
-// task 4
+// Task 4
+// С каждым разом огромнее. It's getting bigger every time.
 public class Solution {
     public static void main(String[] args) {
         String bigAmount = "500";
@@ -66,10 +67,14 @@ public class Solution {
         System.out.println(hugeAmount); // 100500
     }
 }
+/* В переменную hugeAmount нужно записать число 100500.
+Используй переменные bigAmount, greatAmount и преобразование строки в число.
+Для объявления и инициализации hugeAmount используй одну команду. */
 
 
-// task 5
-// Получение длины строки
+
+// Task 5
+// Получение длины строки. Getting the length of a string
 public class Solution {
     public static void main(String[] args) {
         String emptyString = "";
@@ -79,9 +84,13 @@ public class Solution {
         System.out.println((emptyString + 2 + 2 + "22").length()); // 4
     }
 }
+/* В методе main на экран выводятся значения трех строк.
+Внеси изменения в код, чтобы вместо значений строк вывелась длина каждой строки. */
 
 
-// task 6
+
+// Task 6
+// Причешем резюме. Comb your resume
 public class Solution {
     public static void main(String[] args) {
         String title = "Senior Lead Principal Software Engineer Data Architect";
@@ -89,11 +98,14 @@ public class Solution {
         String career = "Experienced Team Leader with strong Organizational Skills and a Successful career in Management.";
 
         System.out.println("RESUME".toLowerCase()); // resume
-        System.out.println("TITLE: ".toLowerCase() + title.toLowerCase()); // title: senior lead principal software engineer data architect
-        System.out.println("DEGREE: ".toLowerCase() + degree.toLowerCase()); // degree: in college, i majored in political science and minored in religious studies.
-        System.out.println("CAREER: ".toLowerCase() + career.toLowerCase()); // career: experienced team leader with strong organizational skills and a successful career in management.
+        System.out.println(("TITLE: " + title).toLowerCase()); // title: senior lead principal software engineer data architect
+        System.out.println(("DEGREE: " + degree).toLowerCase()); // degree: in college, i majored in political science and minored in religious studies.
+        System.out.println(("CAREER: " + career).toLowerCase()); // career: experienced team leader with strong organizational skills and a successful career in management.
     }
 }
+/* Метод main выводит на экран четыре строки. Все они - яркий пример злоупотребления заглавными буквами.
+Внеси изменения в код, чтобы все буквы в этих строках стали строчными. */
+
 
 
 // task 7
