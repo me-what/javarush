@@ -108,7 +108,8 @@ public class Solution {
 
 
 
-// task 7
+// Task 7
+// Попрошу регистр на меня не повышать! I will ask you not to raise the register on me!
 public class Solution {
     public static void main(String[] args) {
         String caps = "if I type in caps ";
@@ -119,3 +120,5 @@ public class Solution {
         System.out.println(caps.toUpperCase() + "they know I mean business".toUpperCase()); // IF I TYPE IN CAPS THEY KNOW I MEAN BUSINESS
     }
 }
+/* В методе main на экран выводятся три строки.
+Внеси изменения в код, чтобы все буквы в этих строках стали заглавными. */
