@@ -35,8 +35,8 @@ public class Solution {
 
 
 
-
-// task 3
+// Task 3
+// 9-ка это перевернутая 6-ка. 9 is an inverted 6
 public class Solution {
     public static void main(String[] args) {
         int six = 6;
@@ -46,8 +46,12 @@ public class Solution {
         System.out.println(six);
     }
 }
+/* Используя только оператор инкремента, измени значение в переменной six, чтобы на экран вывелась цифра 9. */
 
-// task 4
+
+
+// Task 4
+// Когда-то было 32 зуба. Once there were 32 teeth
 public class Solution {
     public static void main(String[] args) {
         int toothCounter = 32;
@@ -65,3 +69,4 @@ public class Solution {
         System.out.println(toothCounter);
     }
 }
+/* Используя только оператор декремента, измени значение переменной toothCounter, чтобы на экран вывелось число 23. */
