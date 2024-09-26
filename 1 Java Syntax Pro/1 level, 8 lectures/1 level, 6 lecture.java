@@ -1,5 +1,8 @@
+// https://javarush.com/quests/lectures/questsyntaxpro.level01.lecture06
 // Комментарии в Java
 
+// Task 1
+// Ну это… С новым годом! Well this… Happy New Year!
 public class Solution {
     public static void main(String[] args) {
         // String s = "Merry";
@@ -14,3 +17,4 @@ public class Solution {
         System.out.println("Year");
     }
 }
+/* Убери комментарии с части кода, чтобы на экран вывелось сообщение "Happy New Year". */

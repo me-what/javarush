@@ -1,7 +1,8 @@
+// https://javarush.com/quests/lectures/questsyntaxpro.level01.lecture07
 // Лучший курс по основам программирования. The best course on the basics of programming
 
-// 1-я задача
-// Комментарии излишни
+// Task 1
+// Комментарии излишни. Comments are unnecessary
 public class Solution {
     public static void main(String[] args) {
         int x = 2;
@@ -17,8 +18,11 @@ public class Solution {
         System.out.println(y);
     }
 }
+/* Раскомментируй одну строчку, чтобы программа вывела на экран числа 12 и 2 (сначала 12, а затем 2). */
 
-// 2-я задача
+
+
+// Task 2
 /*
 2 + 3 = 5
 */
@@ -40,3 +44,6 @@ public class Solution {
         System.out.print(a + b);
     }
 }
+/* Закомментируй ненужные строки кода, чтобы на экран вывелась надпись:
+2 плюс 3 равно 5
+Примечание: комментировать строки с объявлением переменных int a и int b нельзя. */
