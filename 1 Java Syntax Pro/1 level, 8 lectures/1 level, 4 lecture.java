@@ -14,9 +14,12 @@ public class Solution {
 
 
 
-// 2-я задача
+// Task 2
+// Мой юный друг. My young friend
 public class Solution {
     public static void main(String[] args) {
-        System.out.println(3118);
+        System.out.println(3126-8);
     }
 }
+/* Сейчас 3126 год. Мой друг родился 8 лет назад.
+Написать программу, выводящую на экран год рождения моего друга. */
