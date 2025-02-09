@@ -49,7 +49,7 @@ public class Main {
 
         System.out.println("f1 = " + f1);
         System.out.println("f2 = " + f2);
-        
+
         if (f1.compareTo(f2) == 0)
             System.out.println("f1 и f2 равны");
         else
